@@ -102,22 +102,22 @@ $data 	= $ffmpeg->getFileInfo($path_videos.$videofile);
 
 ```
 
-$data['duration'] 						//Duration of the video						
-$data['bitrate'] 						//Bitrate of the video						
-$data['start'] 							//Start of the video
+$data['duration'] 						          //Duration of the video						
+$data['bitrate'] 						            //Bitrate of the video						
+$data['start'] 							            //Start of the video
 $data['video']['dimensions']['height'] 	//informations about height of the video						
 $data['video']['dimensions']['width'] 	//informations about width of the video							 
-$data['video']['frame_rate'] 			//informations about the frame rate of the video				
-$data['video']['pixel_aspect_ratio'] 	//informations about the pixel aspect ratio of the video		
+$data['video']['frame_rate'] 			      //informations about the frame rate of the video				
+$data['video']['pixel_aspect_ratio'] 	  //informations about the pixel aspect ratio of the video		
 $data['video']['display_aspect_ratio'] 	//informations about the display aspect ratio of the video
-$data['video']['pixel_format'] 			//informations about the pixel format of the video
-$data['video']['codec'] 				//informations about the codec the video
-$data['audio'] 							//array('stereo' => -1, 'sample_rate' => -1, 'sample_rate' => -1) informations about sound
-$data['audio']['stereo'] 				//informations about stereo
-$data['audio']['sample_rate'] 			//informations about the sample rate of the sound
-$data['audio']['bitrate'] 				//informations about the bitrate of the sound
-$data['audio']['codec'] 				//informations about the codec of the sound
-$data['_raw_info']						//Informations about raw
+$data['video']['pixel_format'] 			    //informations about the pixel format of the video
+$data['video']['codec'] 				        //informations about the codec the video
+$data['audio'] 							            //array('stereo' => -1, 'sample_rate' => -1, 'sample_rate' => -1) informations about sound
+$data['audio']['stereo'] 				        //informations about stereo
+$data['audio']['sample_rate'] 			    //informations about the sample rate of the sound
+$data['audio']['bitrate'] 				      //informations about the bitrate of the sound
+$data['audio']['codec'] 				        //informations about the codec of the sound
+$data['_raw_info']						          //Informations about raw
 
 ```
 
