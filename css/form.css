@@ -1,0 +1,349 @@
+/**
+ * Mise en forme du formulaire 
+ */
+#page{
+ font-family: "Trebuchet MS",Arial, Helvetica, sans-serif;
+ font-size: 13px;
+}
+#adminform{
+	width: 100%;
+	float: left;
+	display: block;
+	overflow: hidden;
+	font-family: "Trebuchet MS",Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-style: normal;
+	width: 100%;
+	border-top: 1px solid #CCC;
+}
+
+#adminform fieldset,form .fieldsetdiv  {	/*** Mise en forme des cadres ***/
+    border: none;
+    clear: both;
+}
+#adminform legend, form .fieldsetdivhead {	/*** Mise en forme des titres des cadres ***/
+	background:transparent none repeat scroll 0;
+	color:#7D779D;
+	font-size:1.1em;
+	font-weight:bold;
+}
+
+#adminform p, #adminform fieldset p, .fieldsetdiv p {
+	padding-bottom: 5px;
+	padding-top: 0px;
+	margin-bottom: 5px;
+	float:left;
+}
+
+#adminform .separator{
+	background: #EEE url(img/separator.jpg) repeat-x center;
+	width: 610px;
+	text-align: center;
+}
+
+#adminform .separator span{
+	margin:0 auto;
+	background:#EEE;
+	width:auto;
+	padding:5px;
+}
+
+.fielderror input,.fielderror textarea{
+	background:#FFEAEB !important;
+}
+
+#adminform fieldset label, .fieldsetdiv label, #adminform label {
+	float:left;
+	font-weight:bold;
+	line-height:2em;
+	margin:0;
+	padding:0 1.2em 0 0;
+	text-align:right;
+	width:200px;
+	color: #333;
+	font-family: "Trebuchet MS",Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.formfails{
+    background:#FFEAEB;
+    border:1px solid red;
+    color:red;
+    display:block;
+    margin:16px;
+    padding:10px;
+    font-family: "Trebuchet MS",Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+.formsucess{
+    background:#EAFFD5;
+    border:1px solid green;
+    color:green;
+    display:block;
+    margin:16px;
+    padding:10px;
+    font-family: "Trebuchet MS",Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.baliserror{
+	color:red;
+}
+
+
+#adminform .messageAlerte{
+	background:transparent url(img/icons/error.png) no-repeat scroll left top;
+	color:red;
+	font-style: italic;
+	padding-top: 2px;
+	padding-left:20px !important;
+}
+
+
+#adminform span.messageAlerte{
+	width: 370px !important;
+}
+
+#adminform .form_remarque span{
+	width: 390px;
+    float: left;
+}
+
+#adminform  .form_remarque{
+	color:#333;
+	font-size:12px;
+	line-height:18px;
+	display:block;
+	margin-left:220px;
+	margin-top: 5px;
+	width:390px;
+	text-align:justify;
+	font-weight: normal;
+}
+#adminform .form_decount{
+	color: green;
+	font-size:0.85em;
+	line-height:18px;
+	display:block;
+	margin-left:210px;
+	margin-top: 5px;
+	padding-left: 5px;
+	width:390px;
+	text-align:justify;
+}
+
+.focusbg {
+	color: black;
+	border:1px solid #669;
+	background-color:#FAF4FF;
+	padding:2px;
+	font-size:11px;
+}
+
+.normalbg {
+	background-color:#F3EBF6;
+	border:1px solid #5A2075;
+	font-size:0.9em;
+	padding:2px;
+}
+
+#adminform input{
+	background-color:#FFF;
+	border:1px solid #CCC;
+	font-size:13px;
+	padding:2px;
+	width:390px;
+    border-radius:5px 5px 5px 5px;
+}
+
+input.loading{
+	background:#EEE url(img/icons/loading.gif) no-repeat right;
+	border:1px solid #CCC;
+	font-size:13px;
+	padding:2px;
+	width:390px;
+    border-radius:5px 5px 5px 5px;
+}
+
+#adminform div.readonly, #adminform span.readonly {
+	font-size: 15px;
+	padding: 0;
+	width: 390px;
+	color: #222;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	display: block;
+	float: left;
+	line-height: 28px;
+}
+
+
+#adminform textarea {
+	background-color:#FFF;
+	border:1px solid #CCC;
+	font-size:13px;
+	padding:2px;
+	width:390px;
+	height: 250px;
+    border-radius:5px 5px 5px 5px;
+}
+
+#adminform select {
+	background-color:#FFF;
+	border:1px solid #CCC;
+	font-size:11px;
+	padding:2px;
+	width:390px;
+    border-radius:5px 5px 5px 5px;
+}
+
+#adminform button{
+	text-align: center;
+	margin: 20px;
+}
+
+#adminform .bt-normal,button {
+    margin:0;
+    padding:5px ;
+    background:transparent url("img/icons/bg-boutton.gif") repeat-x scroll 0 bottom;
+    border:1px solid #95A873;
+    color:#669900;
+    cursor:pointer;
+    font-weight:bold;
+    height:36px;
+}
+#adminform .bt-hover {
+    margin:0;
+    padding:0 ;
+    width:120px;
+    height:22px;
+    background:url("img/icons/bg-boutton.gif") no-repeat 0px -22px;
+    border:0;
+    cursor:pointer;
+}
+#adminform .date-botton {
+    margin-left: -19px;
+    position: relative;
+    top: 3px;
+}
+
+#reset_form {
+    background:url("img/icons/bt_bg.png") repeat-x;
+    color: #FFF;
+    height: 25px;
+    font-size: 0.80em;
+    margin:0;
+    padding:5px 10px;
+    border: 0px;
+    text-transform: uppercase;
+    border-radius:5px 5px 5px 5px;
+    margin: 10px 0px 0px 230px !important;
+}
+
+#submit_form {
+    background:url("img/icons/bt_bg.png") repeat-x;
+    color: #FFF;
+    height: 25px;
+    font-size: 0.80em;
+    margin:0 !important;
+    padding:5px 10px;
+    border: 0px;
+    margin-left: 5px !important;
+    text-transform: uppercase;
+    border-radius:5px 5px 5px 5px;
+}
+/* ---- LOG IN ---- */
+#login{
+    width: 320px;
+    margin: 7em auto;
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+    font-weight: 50;
+    font-size: 16px;
+}
+#loginform {
+    margin-left: 8px;
+    padding: 26px 24px 46px;
+    font-weight: normal;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: white;
+    border: 1px solid #E5E5E5;
+    -moz-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+    -webkit-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+    -khtml-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+    box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+}
+#login h1 {
+    display: block;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    color: #555;
+}
+#login #login_error {
+    background-color: #FFEBE8;
+    border-color: #C00;
+    margin: 0 0 16px 8px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 12px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+#login #nav{
+    text-shadow: rgba(255, 255, 255, 1) 0 1px 0;
+    margin: 0 0 0 16px;
+    padding: 16px 16px 0;
+}
+#login #nav a{
+    color: #21759B!important;
+}
+#login label {
+    color: #777;
+    font-size: 14px;
+}
+#login .input {
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    width: 97%;
+    padding: 3px;
+    margin-top: 2px;
+    margin-right: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: none;
+    -moz-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+    -webkit-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+    box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+}
+#login .button-primary{
+    border-color: #9257B1;
+    color: white;
+    font-weight: bold;
+    font-size: 0.95em;
+    background:#000;
+    text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
+    border-radius: 5px;
+}
+
+
+.error{
+	background: url("img/icons/warning.gif") no-repeat scroll 10px center #FBEDEC;
+    border-bottom: 1px solid #DDDDDD;
+    border-color: #DDDDDD #FFD7CD;
+    border-top: 1px solid #DDDDDD;
+    color: #C93A3A;
+    font-family: Arial;
+    font-size: 14px;
+    margin: 15px 20px;
+    padding: 10px 40px;
+    text-align: justify;
+    text-transform: uppercase;
+}
