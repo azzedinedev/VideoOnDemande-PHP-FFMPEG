@@ -127,6 +127,22 @@ To create the thumbnail using FFMPEG
  $exec = exec($path_ffmpeg." -i ".$path." -an -ss 00:00:03 -r 1 -vframes 1 -f mjpeg -y ".$path_images.".jpg");
 ```
 
+You can also use the thumb php Class based on GD extension
+
+```
+$path_thumb         = "objects/class.thumb.php";
+if (!class_exists('thumb')) { include($path_thumb); }
+
+//Thumb
+$thumb 	= new thumb();
+.
+.
+.
+
+$path = $thumb->return_path($source,$width,$height,$distination_file,80,$watermark);
+
+```
+
 ## Author
 
 - [@azzedinedev](https://github.com/azzedinedev)
