@@ -104,7 +104,7 @@ $data 	= $ffmpeg->getFileInfo($path_videos.$videofile);
 
 $data['duration']                       //Duration of the video						
 $data['bitrate']                        //Bitrate of the video						
-$data['start'] 							            //Start of the video
+$data['start']                          //Start of the video
 $data['video']['dimensions']['height'] 	//informations about height of the video						
 $data['video']['dimensions']['width'] 	//informations about width of the video							 
 $data['video']['frame_rate']            //informations about the frame rate of the video				
