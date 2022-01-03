@@ -8,11 +8,8 @@
 //|		SAR Azzeddine: azzedinedev@gmail.com							|
 //+---------------------------------------------------------------------+
 /*
- * @ name : video.php
+ * @ name : ffmpeg_class.php
  * @ description : a class used to encode, decode, resize and reformat videos...
- * @ author : Yaug - Manuel Esteban
- * @ contact : yaug@caramail.com
- * @ date : 03/01/2008
 */
 
 class ffmpeg{

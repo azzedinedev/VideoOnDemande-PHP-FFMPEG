@@ -30,22 +30,22 @@ if( in_array($extension, $array_ext) and ( file_exists($path_videos.$videofile) 
 
 	$data 		= $ffmpeg->getFileInfo($path_videos.$videofile);
 	/*
-	$data['duration'] 						//la duree du fichier video						
-	$data['bitrate'] 						//le bitrate du fichier video						
-	$data['start'] 							//le debut de la duree du fichier video
-	$data['video']['dimensions']['height'] 	//informations sur la hauteur de la video						
-	$data['video']['dimensions']['width'] 	//informations sur la largeur de la video							 
-	$data['video']['frame_rate'] 			//informations sur le ratio des frame de la video				
-	$data['video']['pixel_aspect_ratio'] 	//informations sur l'aspect des ratios de la video		
-	$data['video']['display_aspect_ratio'] 	//informations sur l'affichage des ratios de la video
-	$data['video']['pixel_format'] 			//informations sur le format des p�xels de la video
-	$data['video']['codec'] 				//informations sur le codec de la video
-	$data['audio'] 							//array('stereo' => -1, 'sample_rate' => -1, 'sample_rate' => -1) informations sur le son
-	$data['audio']['stereo'] 				//informations sur le stereo du son
-	$data['audio']['sample_rate'] 			//informations sur le sample_rate du son
-	$data['audio']['bitrate'] 				//informations sur le bitrate du son
-	$data['audio']['codec'] 				//informations sur le codec du son	
-	$data['_raw_info']
+	$data['duration'] 						//Duration of the video						
+	$data['bitrate'] 						//Bitrate of the video						
+	$data['start'] 							//Start of the video
+	$data['video']['dimensions']['height'] 	//informations about height of the video						
+	$data['video']['dimensions']['width'] 	//informations about width of the video							 
+	$data['video']['frame_rate'] 			//informations about the frame rate of the video				
+	$data['video']['pixel_aspect_ratio'] 	//informations about the pixel aspect ratio of the video		
+	$data['video']['display_aspect_ratio'] 	//informations about the display aspect ratio of the video
+	$data['video']['pixel_format'] 			//informations about the pixel format of the video
+	$data['video']['codec'] 				//informations about the codec the video
+	$data['audio'] 							//array('stereo' => -1, 'sample_rate' => -1, 'sample_rate' => -1) informations about sound
+	$data['audio']['stereo'] 				//informations about stereo
+	$data['audio']['sample_rate'] 			//informations about the sample rate of the sound
+	$data['audio']['bitrate'] 				//informations about the bitrate of the sound
+	$data['audio']['codec'] 				//informations about the codec of the sound
+	$data['_raw_info']						//Informations about raw
 	*/	
 	
 	if( $data['video']['dimensions']['height'] >= '720' ){
