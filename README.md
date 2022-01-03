@@ -27,11 +27,6 @@ We have 3 classes :
 - ffmpeg_class.php : A class used to encode, decode, resize and reformat videos
 - functions.php
 
-
-```
-Give examples
-```
-
 ### FFMPEG Class
 
 The supported videos formats are :
@@ -105,6 +100,8 @@ $ffmpeg = new ffmpeg();
 $data 	= $ffmpeg->getFileInfo($path_videos.$videofile);
 ```
 
+```
+
 $data['duration'] 						//Duration of the video						
 $data['bitrate'] 						//Bitrate of the video						
 $data['start'] 							//Start of the video
@@ -121,6 +118,8 @@ $data['audio']['sample_rate'] 			//informations about the sample rate of the sou
 $data['audio']['bitrate'] 				//informations about the bitrate of the sound
 $data['audio']['codec'] 				//informations about the codec of the sound
 $data['_raw_info']						//Informations about raw
+
+```
 
 To create the thumbnail using FFMPEG
 
